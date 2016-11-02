@@ -1,0 +1,52 @@
+body {
+	background-color: #890839;
+	margin: 0;
+	padding: 50px;
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+	color: #fff;
+}
+
+#title {
+	width: 100%;
+	text-align: center;
+	margin-left: -50px;
+	display: inline-block;
+}
+
+img, #time {
+	margin: 0;
+	padding: 0;
+	width: 40%;
+	display: inline-block;
+	float: left;
+	font-size: 100px;
+}
+
+@media (max-width: 970px) {
+	#title, img {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#title {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 808px) {
+	#title {
+		width: 95%;
+	}
+}
+
+@media (max-width: 843px) {
+	body {
+		padding: 0;
+	}
+	#time {
+		z-index: 10;
+		margin-top: 0;
+		margin-left: -200px;
+	}
+}
